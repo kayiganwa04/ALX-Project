@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>
+        AvaCode
+      </title>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="https://alx-apply.hbtn.io/level2/school.css" rel="stylesheet">
+      <link href="styles.css" rel="stylesheet">
+      <script src="behavior.js"></script>
+</head>
+<body>
+    <header>
+        <h1 class="logo_ava">Ava<label>Code</label></h1>
+        <div class="right" id="right">
+            <div class="fb-share-button" data-href="https://web.facebook.com/alxafrica/?_rdc=1&amp;_rdr" data-layout="button_count" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fweb.facebook.com%2Falxafrica%2F%3F_rdc%3D1%26_rdr&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
+            <a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=hello%20world" data-size="large">Tweet</a>
+        </div>
+            <ul class="list__menu">
+                    <li><a class="nav_link" href="index.html">Home</a></li>
+                    <li><a class="nav_link" href="tweets.html">Tweets</a></li>
+                    <li><a class="nav_link active_page" href="contact.html">Contact Us</a></li>
+                    <li><a class="nav_link" href="projects.html">Projects</a></li>
+
+            </ul>
+             
+    </header>
+    <main class="main">
+        <section class="contact_section" id="contact">
+            <h2 class="section-title">Get In Touch</h2>
+
+            <div class="contact__container bd-grid">
+                <script>
+                    function form(){
+                        var name= document.getElementById('name');
+                        alert('THANK YOU  ' +name.value);
+                    }
+                </script>
+                <form  class="contact__form" onsubmit="return form();">
+                    <div class="contact__inputs">
+                        <input type="text" placeholder="Name" id="name" class="contact__input" required>
+                        <input type="email" placeholder="Email" class="contact__input" required>
+                    </div>
+                    <input type="text" placeholder="project" class="contact__input">
+                    <textarea name="" id="" cols="0" rows="10" placeholder="Message" class="contact__input"></textarea>
+
+                    <input type="submit" value="Send Message" class="button contact__button">
+                </form>
+
+                <div class="contact__information">
+                    <h2 class="section-information">Information</h2>
+                    <div class="contact__info">
+                        <h3 class="contact__subtitle">Call us</h3>
+                        <span class="contact__text">&#9742;+250 783 493 350</span>
+                        <span class="contact__text">&#9742;+250 722 450 600</span>
+                    </div>
+
+                    <div class="contact__info">
+                        <h3 class="contact__subtitle">E-mail Us</h3>
+                        <span class="contact__text">&#128231;eddycletis90@gmail.com</span>
+                        <span class="contact__text">&#128231;kayiganwa04@gmail.com</span>
+                    </div>
+
+                    <div class="contact__info">
+                        <h3 class="contact__subtitle">Location</h3>
+                        <span class="contact__text">&#128506;Kigali, Rwanda kk 125st</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <p>Made by Eddy Kayiganwa for <a href="https://alx-apply.htbn.io" target="_blank">ALX</a></p>
+    </footer>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v10.0" nonce="yhN09gRY"></script>
+</body>
+</html>
